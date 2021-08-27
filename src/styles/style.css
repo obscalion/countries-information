@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* jumbotron cdn -> https://i.imgur.com/bnaNx9I.jpg */
+.jumbotron {
+    min-height: 700px;
+    color: white;
+    background-color: #00113f;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/jumbotron-img.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 25px;
+    line-height: 2em;
+    padding: 10%;
+}
+
+.searchCountry {
+    margin-top: 0;
+    padding: 100px 0 150px 0;
+}
+
+.searchCountry h1 { 
+    font-size: 2em;
+    text-align: center; }
+
+.content {
+    min-height: 800px;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10%;
+    box-shadow: 0px -10px 48px 23px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px -10px 48px 23px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px -10px 48px 23px rgba(0,0,0,0.56);
+}
+
+.countriesLabel {
+    width: 200px;
+    color: #00113f;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: 75px;
+    border-bottom: 3px solid #00113f;
+    transition: .5s;
+}
+
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footerText {
+  font-size: 16px;
+  color: #ddd;
+}
+
+country-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+
+  .jumbotron {
+    min-height: 400px;
+    padding: 50px 5px 70px;
+  }
+
+  .searchCountry h1 {
+    font-size: 1.5em;
+  }
+
+  .content {
+    padding: 75px 10px 10px 10px;
+  }
+
+  .countriesLabel {
+    transform: scale(.8);
+    transition: .5s;
+  }
+}
