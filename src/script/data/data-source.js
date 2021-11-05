@@ -1,7 +1,7 @@
 class DataSource {
   static searchCountry(keyword) {
     if (keyword !== '') {
-      return fetch(`https://restcountries.eu/rest/v2/name/${keyword}`)
+      return fetch(`https://restcountries.com/v3.1/name/${keyword}`)
         .then((response) => response.json())
         .then((responseJson) => {
           if (responseJson.status === 404) {
